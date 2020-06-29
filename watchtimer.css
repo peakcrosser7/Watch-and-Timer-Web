@@ -1,0 +1,148 @@
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    width: 27rem;
+    height: 45rem;
+    background-color: rgb(73, 73, 73);
+    color:white;
+    font-family: "黑体",Arial;
+    padding:1.5rem;
+    cursor: default;
+}
+
+#tabs{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #999;
+}
+
+#tabs span{
+    margin: 0 2rem;
+}
+
+
+/*时钟部分*/
+#map{
+    width:90%;
+    margin: 0 5%;
+}
+
+#local{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+#localtime{
+    font-size: 3rem;
+}
+
+#localdate{
+    color:#999;
+}
+
+.city{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.city .dateline{
+    color:#999;
+}
+
+.cityname{
+    font-size: 1.3rem;
+}
+
+.left .date{
+    font-size: 1rem;
+}
+
+.citytime{
+    width: 25%;
+    font-size: 3rem;
+}
+
+
+/*秒表部分*/
+
+#watch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#stoptime{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size: 2.5rem;
+}
+
+#littlewatch{
+    position: absolute;
+    left: 50%;
+    top:65%;
+    transform: translate(-50%,0);
+    width: 50px;
+    height: 50px;
+}
+
+#flags{
+    height: 13rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    word-spacing: 1rem;
+    overflow: auto;
+    color:#999 ;
+}
+
+
+#buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#buttons img{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 3rem;
+}
+
+::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 14px;		/*滚动条宽高*/
+    height: 14px;
+  }
+   
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {/*滚动条轨迹和滑块*/
+    border-radius: 999px;
+    border: 5px solid transparent;
+
+    min-height: 1rem;
+    background-clip: content-box;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2) inset;
+  }
+   
+  ::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+  }
+   
+  ::-webkit-scrollbar-corner {/*滚动条边角*/
+    background: transparent;
+  }
